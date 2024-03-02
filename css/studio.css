@@ -67,7 +67,7 @@ a:hover {
     cursor: pointer;
     text-decoration: underline;
 }
-address a {
+address a, img{
     font-size: 16px;
     font-weight: 400;
     line-height: 24px;
@@ -238,6 +238,13 @@ h2 {
 .icons-list .icon svg:hover{
     fill: white;
 }
+.icons-list .icon svg:active{
+    fill: #4D5AE5;
+}
+.icons-list:first-child{
+    width: 24px;
+    height: 24px;
+}
 /* Customers section */
 .customers{
     padding: 120px;
@@ -318,8 +325,10 @@ ul button {
     padding-top: 12px;
     padding-bottom: 12px;
 }
-button:hover {
+button:hover,
+button:focus {
     cursor: pointer;
+    box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
 }
 .button {
     background: #f4f4fd;
@@ -331,6 +340,7 @@ button:hover {
     flex-wrap: wrap;
     margin: 96px 271px 72px;
 }
+
 /*Grid cards section*/
 .card h3 {
     font-size: 20px;
@@ -356,5 +366,8 @@ button:hover {
     border: 1px solid #e7e9fc;
     width: 360px;
     height: 420px;
-    /* flex-basis: calc((100%-72px)/3)); */
+}
+.card:hover,
+.card:focus{
+    box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
 }
