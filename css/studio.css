@@ -127,6 +127,8 @@ address a {
     justify-content: center;
     gap: 1rem;
     margin: 120px 0;
+    width: 1128px;
+        height: 224px;
 }
 li > h3{
     text-align: left;
@@ -147,6 +149,17 @@ h3 {
     letter-spacing: 0.02em;
     text-align: center;
     color: #2e2f42;
+}
+.icon-feature{
+    width: 264px;
+        height: 112px;
+        background-color: #f4f4fd;
+        border-radius: 4px;
+        padding: 24px 100px;
+}
+.icon-feature svg{
+    width: 64px;
+    height: 64px;
 }
 
 /* What are we doing section */
@@ -202,11 +215,7 @@ h2 {
 .icons-list .icon svg{
     width: 16px;
     height: 16px;
-    fill: #434455;
-}
-.icons-list:first-child {
-    width: 50px;
-    height: 50px;
+    fill: #858588;
 }
 .icons-list{
     display: flex;
@@ -221,12 +230,32 @@ h2 {
     display: flex;
     justify-content: center;
     align-items: center;
-    color: rgb(34, 30, 30);
 }
 .icons-list .icon:hover{
     background-color: #4D5AE5;
     color: #fff;
 }
+.icons-list .icon svg:hover{
+    fill: white;
+}
+/* Customers section */
+.customers{
+    padding: 120px;
+}
+.customers-icon{
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+}
+.customers-icon svg{
+    width: 104px;
+    height: 56px;
+}
+.icon-border {
+    border: 1px solid #858588;
+    padding: 16px 32px;
+}
+
 /* Footer section */
 .logo-bottom::after {
     content: "STUDIO";
@@ -260,12 +289,13 @@ h2 {
     background-color: var(--brand-color);
     text-align: left;
     padding: 100px 1020px 100px 156px;
+    display: flex;
+    gap: 120px;
 }
 .footer-paragraph {
     width: 264px;
     margin-top: 16px;
 }
-
 
 /* Portofolio */
 
